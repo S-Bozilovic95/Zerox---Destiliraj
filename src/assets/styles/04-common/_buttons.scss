@@ -1,0 +1,103 @@
+.global-btn-small {
+  padding: 10.5px 41px;
+  background: #c6b787;
+  border-radius: 10px;
+  font-family: "Raleway" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  border: 2px solid transparent;
+  transition: 0.25s ease-out;
+
+  &:hover {
+    background-color: #ffffff;
+    border: 2px solid #c6b787;
+    color: #c6b787;
+    transition: 0.25s ease-in;
+  }
+}
+
+.global-btn-regular {
+  padding: 13.5px 58px;
+  background: #c6b787;
+  border-radius: 10px;
+  font-family: "Raleway" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  border: 2px solid transparent;
+  transition: 0.25s ease-out;
+
+  &:hover {
+    background-color: #ffffff;
+    border: 2px solid #c6b787;
+    color: #c6b787;
+    transition: 0.25s ease-in;
+  }
+}
+
+.global-btn-medium {
+  padding: 13px 42px;
+  background: #c6b787;
+  border-radius: 10px;
+  font-family: "Raleway" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  border: 2px solid transparent;
+  transition: 0.25s ease-out;
+
+  &:hover {
+    background-color: #ffffff;
+    border: 2px solid #c6b787;
+    color: #c6b787;
+    transition: 0.25s ease-in;
+  }
+}
+
+.global-btn-outlined {
+  padding: 13px 62px;
+  background: transparent;
+  border-radius: 10px;
+  font-family: "Raleway" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #483a14;
+  border: 2px solid transparent;
+  transition: 0.25s ease-out;
+  border: 2px solid #d2d2d2;
+
+  &:hover {
+    background-color: #d2d2d2;
+    transition: 0.25s ease-in;
+  }
+}
+
+@media (max-width: 1024px) {
+  .global-btn-small {
+    width: 100%;
+  }
+
+  .global-btn-regular {
+    width: 100%;
+  }
+
+  .global-btn-medium {
+    width: 100%;
+  }
+
+  .global-btn-outlined {
+    width: 100%;
+  }
+}

@@ -1,0 +1,66 @@
+.global-title {
+  font-family: "Raleway" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.global-subtitle {
+  font-family: "Raleway" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.global-main-description {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 127.4%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #a9abb1;
+}
+
+.global-description {
+  font-family: "Raleway" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: -0.02em;
+  color: #a9abb1;
+}
+
+// responsive
+@media (max-width: 1024px) {
+  .global-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .global-subtitle {
+    font-size: 19.1261px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  .global-main-description {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .global-description {
+    font-size: 11.1569px;
+    line-height: 170%;
+  }
+}
