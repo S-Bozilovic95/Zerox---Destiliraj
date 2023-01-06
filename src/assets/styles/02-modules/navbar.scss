@@ -3,6 +3,9 @@
   top: 0;
   left: 0;
   width: 100%;
+  background: #ffffff;
+  transition: 0.25s ease-out;
+  z-index: 10;
 
   &__top-box {
     background-color: #212121;
@@ -13,12 +16,10 @@
     align-items: center;
     flex-wrap: nowrap;
     width: 100%;
-
+    transition: 0.25s ease-in;
     white-space: nowrap;
 
     p {
-      font-family: "Raleway";
-      font-style: normal;
       font-weight: 700;
       font-size: 14px;
       line-height: 170%;
@@ -39,8 +40,6 @@
     }
 
     a {
-      font-family: "Raleway";
-      font-style: normal;
       font-weight: 700;
       font-size: 14px;
       line-height: 170%;
@@ -52,16 +51,14 @@
 
   &__bottom-box {
     padding: 36px 0px;
+    transition: 0.25s ease-out;
+    align-self: center;
 
     &__link-box {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      margin-right: 44px;
+      transform: translate(0%, 50%);
+      white-space: nowrap;
 
       &__link {
-        font-family: "Raleway";
-        font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 19px;
@@ -73,5 +70,154 @@
         }
       }
     }
+  }
+
+  &__small-menu {
+    display: none;
+    padding: 20px 0px;
+    &__icon {
+      width: 30px;
+      height: 40px;
+      cursor: pointer;
+
+      span {
+        content: "";
+        height: 3px;
+        display: block;
+        background-color: #e2dbc3;
+        margin: 6px 0px;
+        border-radius: 15px;
+        transition: opacity 0.2s cubic-bezier(0.3, 0, 0.22, 1),
+          -webkit-transform 0.4s cubic-bezier(0.3, 0, 0.22, 1);
+        transition: transform 0.4s cubic-bezier(0.3, 0, 0.22, 1),
+          opacity 0.2s cubic-bezier(0.3, 0, 0.22, 1);
+        transition: transform 0.4s cubic-bezier(0.3, 0, 0.22, 1),
+          opacity 0.2s cubic-bezier(0.3, 0, 0.22, 1),
+          -webkit-transform 0.4s cubic-bezier(0.3, 0, 0.22, 1);
+
+        &:nth-child(1) {
+          margin-top: 10px;
+          transform-origin: bottom right !important;
+          transform: rotate(0deg) translateY(-1px);
+        }
+
+        &:nth-child(3) {
+          transform-origin: top right !important;
+          transform: rotate(0deg) translateY(1px);
+        }
+      }
+    }
+  }
+}
+
+// custom classes
+.top-box-slide {
+  transform: translateY(-60px);
+  transition: 0.25s ease-out;
+
+  .navbar__top-box {
+    transform: translateY(-100%);
+  }
+}
+
+.navbar-active {
+  .navbar__bottom-box {
+    max-height: 500px;
+    transition: 0.25s ease-in;
+    padding: 20px 0px;
+  }
+
+  .navbar__small-menu__icon {
+    span {
+      &:nth-child(1) {
+        transform-origin: bottom right !important;
+        transform: rotate(-47deg) translateY(-4px);
+      }
+      &:nth-child(2) {
+        transform: translateY(100%) !important;
+        opacity: 0 !important;
+      }
+      &:nth-child(3) {
+        transform-origin: top right !important;
+        transform: rotate(47deg) translateY(4px);
+      }
+    }
+  }
+}
+
+.overlay {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.26);
+  z-index: 5;
+  display: none;
+}
+
+// responsive
+@media (max-width: 1024px) {
+  .navbar {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+
+    &__top-box {
+      padding: 13px 11px;
+      span {
+        font-size: 10px;
+        margin-right: 5px;
+      }
+
+      a {
+        font-size: 10px;
+      }
+
+      p {
+        font-size: 10px;
+        line-height: 12px;
+        margin-right: 5px;
+      }
+    }
+
+    &__bottom-box {
+      width: 100%;
+      max-height: 0px;
+      padding: 0px 0px;
+      overflow: hidden;
+
+      &__logo {
+        display: none;
+      }
+
+      &__link-box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        transform: none;
+
+        &__link {
+          margin-right: 0px;
+          margin-bottom: 30px;
+
+          &:last-child {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+
+    &__small-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .overlay-active {
+    display: block;
   }
 }
