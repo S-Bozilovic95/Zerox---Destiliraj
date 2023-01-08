@@ -165,12 +165,14 @@
     &__top-box {
       padding: 13px 11px;
       span {
-        font-size: 10px;
-        margin-right: 5px;
+        // font-size: 10px;
+        // margin-right: 5px;
+        display: none;
       }
 
       a {
-        font-size: 10px;
+        // font-size: 10px;
+        display: none;
       }
 
       p {
