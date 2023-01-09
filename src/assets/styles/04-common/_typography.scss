@@ -12,7 +12,7 @@
 .global-subtitle {
   font-family: "Raleway" !important;
   font-style: normal;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -26,7 +26,7 @@
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-  line-height: 127.4%;
+  line-height: 127%;
   letter-spacing: 0.03em;
   color: #a9abb1;
 }
@@ -34,7 +34,7 @@
 .global-description {
   font-family: "Raleway" !important;
   font-style: normal;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   font-size: 14px;
   line-height: 170%;
@@ -62,7 +62,6 @@
   }
 
   .global-description {
-    font-size: 11.1569px;
-    line-height: 170%;
+    font-size: 11px;
   }
 }
