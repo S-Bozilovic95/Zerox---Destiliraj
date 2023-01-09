@@ -55,7 +55,9 @@
     align-self: center;
 
     &__link-box {
-      transform: translate(0%, 50%);
+      height: 100%;
+      display: flex;
+      align-items: center;
       white-space: nowrap;
 
       &__link {
