@@ -51,8 +51,24 @@
       display: block;
     }
 
+    &__title {
+      position: relative !important;
+      width: 50%;
+      margin: auto;
+      &::before {
+        position: absolute;
+        bottom: -4px;
+        right: 20%;
+        content: "";
+        width: 69px;
+        height: 17px;
+        background: #c6b787;
+        z-index: -1;
+      }
+    }
+
     &__sub-desc {
-      margin: 10px 0px 95px;
+      margin: 10px 0px 46px;
     }
 
     &__text-box {
@@ -69,8 +85,8 @@
 
       h3 {
         width: 80%;
-
         margin-bottom: 45px;
+        position: relative;
       }
 
       p {
