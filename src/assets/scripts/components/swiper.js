@@ -9,11 +9,26 @@ const swiperDesktop = new Swiper('.swiper-desktop', {
 });
 
 const swiperMobile = new Swiper('.swiper-mobile', {
-    slidesPerView: 1.6,
+
     loop: true,
 
-    spaceBetween: 0,
     pagination: {
         el: '.swiper-pagination',
     },
+    breakpoints: {
+
+        768: {
+            slidesPerView: 2,
+
+        },
+        450: {
+            slidesPerView: 1.5,
+
+        },
+        300: {
+            slidesPerView: 1.3,
+
+        },
+    }
+
 });

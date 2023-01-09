@@ -1,11 +1,4 @@
 .swiper-pagination {
-  margin-top: 30px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-
   .swiper-pagination-bullet {
     margin: 0px 5px;
     width: 7.65px;
@@ -19,4 +12,8 @@
     height: 15.29px;
     background-color: #483a14;
   }
+}
+
+.swiper-wrapper {
+  height: 300px !important;
 }

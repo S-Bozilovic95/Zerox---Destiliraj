@@ -70,7 +70,7 @@
       }
 
       &__image {
-        display: inline-block;
+        display: block;
         margin-bottom: 30px;
         width: 100%;
       }
@@ -79,7 +79,7 @@
         margin-top: 40px;
 
         &:first-of-type a {
-          margin-right: 0px;
+          margin-right: 0px !important;
           margin-bottom: 15px;
         }
       }

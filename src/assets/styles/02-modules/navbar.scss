@@ -166,27 +166,23 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 
     &__top-box {
-      padding: 13px 11px;
+      padding: 13px 0px;
       span {
-        // font-size: 10px;
-        // margin-right: 5px;
         display: none;
       }
 
       a {
-        // font-size: 10px;
         display: none;
       }
 
       p {
         font-size: 10px;
         line-height: 12px;
-        margin-right: 5px;
+        margin-right: 0px;
       }
     }
 
     &__bottom-box {
-      width: 100%;
       max-height: 0px;
       padding: 0px 0px;
       overflow: hidden;
