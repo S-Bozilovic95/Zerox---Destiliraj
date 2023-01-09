@@ -8,8 +8,7 @@ const swiperDesktop = new Swiper('.swiper-desktop', {
     centeredSlides: true,
 });
 
-const swiperMobile = new Swiper('.swiper-mobile', {
-
+const swiperMobileMultiple = new Swiper('.swiper-mobile-multiple', {
     loop: true,
 
     pagination: {
@@ -30,5 +29,16 @@ const swiperMobile = new Swiper('.swiper-mobile', {
 
         },
     }
+
+});
+
+const swiperMobile = new Swiper('.swiper-mobile', {
+    loop: true,
+    slidesPerView:1,
+    spaceBetween:1,
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
 
 });
