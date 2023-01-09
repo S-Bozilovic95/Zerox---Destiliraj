@@ -1,7 +1,7 @@
 .global-btn-small {
   display: inline-block;
   text-align: center;
-  padding: 10.5px 41px;
+  padding: 10.5px 56px;
   background: #c6b787;
   border-radius: 10px;
   font-weight: 700;
@@ -88,7 +88,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: breakpoint(md)) {
   .global-btn-small {
     width: 100%;
   }

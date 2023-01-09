@@ -1,5 +1,5 @@
 .hero {
-  padding: 200px 0px 50px;
+  padding: 200px 0px 60px;
   position: relative;
 
   &__image-box {
@@ -30,6 +30,10 @@
       }
     }
 
+    &:first-of-type p {
+      text-align: left;
+    }
+
     &__image {
       display: none;
     }
@@ -46,6 +50,7 @@
 
 @media (max-width: breakpoint(md)) {
   .hero {
+    padding: 150px 0px 23px;
     &__image-box {
       display: none;
     }
@@ -68,10 +73,6 @@
         display: inline-block;
         margin-bottom: 30px;
         width: 100%;
-      }
-
-      &:first-of-type p {
-        text-align: center;
       }
 
       &__btn-box {

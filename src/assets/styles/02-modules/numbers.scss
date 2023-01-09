@@ -1,0 +1,78 @@
+.numbers {
+  padding: 60px 0px;
+  background: linear-gradient(180deg, #ffffff 400px, #f9f6ed 100px);
+
+  &__num-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__number {
+      font-family: "STIXIntegralsD" !important;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 67px;
+      margin-bottom: 50px;
+      color: #000000;
+    }
+
+    &:first-of-type p {
+      width: 60%;
+    }
+  }
+
+  &__image-desktop {
+    display: block;
+    margin: 65px auto 40px;
+    text-align: center;
+  }
+
+  &__image-mobile {
+    display: none;
+  }
+
+  &__desc {
+    width: 70%;
+    margin: 10px auto 50px;
+  }
+
+  &__btn-box {
+    text-align: center;
+  }
+}
+
+@media (max-width: breakpoint(md)) {
+  .numbers {
+    padding: 23px 0px 84px;
+    background: linear-gradient(180deg, #ffffff 800px, #f9f6ed 100px);
+
+    &__num-box {
+      margin-bottom: 40px;
+      &__number {
+        font-weight: 700;
+        font-size: 67px;
+        margin-bottom: 20px;
+      }
+
+      &:first-of-type p {
+        width: 70%;
+      }
+    }
+
+    &__image-desktop {
+      display: none;
+    }
+
+    &__image-mobile {
+      display: block;
+      margin: 65px auto 30px;
+      width: 100%;
+    }
+
+    &__desc {
+      width: 100%;
+      margin: 10px auto 31px;
+    }
+  }
+}
