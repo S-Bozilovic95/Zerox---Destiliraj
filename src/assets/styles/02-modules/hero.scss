@@ -1,11 +1,11 @@
 .hero {
-  padding: 200px 0px 120px;
+  padding: 100px 0px 120px;
   position: relative;
 
   &__image-box {
     position: absolute;
-    right: 50px;
-    top: 200px;
+    right: -50px;
+    // top: 200px;
     width: 625px;
     height: 525px;
     background-size: cover;
@@ -16,8 +16,8 @@
 
   &__text-box {
     position: relative;
-    width: 40%;
     z-index: 3 !important;
+
     &__title {
       margin: 32px 0px;
       font-weight: 700;
@@ -32,6 +32,7 @@
 
     &:first-of-type p {
       text-align: left;
+      max-width: 450px;
     }
 
     &__image {
@@ -68,6 +69,11 @@
         span {
           color: #c6b787;
         }
+      }
+
+      &:first-of-type p {
+        text-align: left;
+        max-width: 100%;
       }
 
       &__image {

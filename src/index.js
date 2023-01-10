@@ -18,3 +18,4 @@ const includeComponent = (script) => require(`./assets/scripts/components/${scri
 includeComponent('slider');
 includeComponent('navbar');
 includeComponent('swiper');
+includeComponent('drop-bars');

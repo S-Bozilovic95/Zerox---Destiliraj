@@ -1,0 +1,183 @@
+.drop-bars {
+  padding: 134px 0px 40px;
+  background: #f9f6ed;
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  &__bars-box {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__bar {
+      padding: 13px 39px 13px 10px;
+      background: #ffffff;
+      border-radius: 10px;
+      width: 40%;
+      margin-bottom: 12px;
+
+      &__tab {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+
+        &__icon-1 {
+          margin-right: 33px;
+        }
+
+        &__desc {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          color: #000000;
+        }
+
+        &__icon-2 {
+          position: absolute;
+          right: 10px;
+          top: 20px;
+          cursor: pointer;
+
+          width: 30px;
+          height: 40px;
+          cursor: pointer;
+
+          span {
+            content: "";
+            height: 4px;
+            width: 12px;
+            background: #483a14;
+            display: block;
+            border-radius: 0px;
+            transition: opacity 0.2s cubic-bezier(0.3, 0, 0.22, 1),
+              -webkit-transform 0.4s cubic-bezier(0.3, 0, 0.22, 1);
+            transition: transform 0.4s cubic-bezier(0.3, 0, 0.22, 1),
+              opacity 0.2s cubic-bezier(0.3, 0, 0.22, 1);
+            transition: transform 0.4s cubic-bezier(0.3, 0, 0.22, 1),
+              opacity 0.2s cubic-bezier(0.3, 0, 0.22, 1),
+              -webkit-transform 0.4s cubic-bezier(0.3, 0, 0.22, 1);
+
+            &:nth-child(1) {
+              margin-top: 10px;
+              transform-origin: bottom right !important;
+              transform: rotate(90deg) translateY(8px);
+            }
+
+            &:nth-child(2) {
+              transform-origin: top right !important;
+              transform: rotate(0deg) translateY(-8px);
+            }
+          }
+        }
+      }
+
+      &__text-box {
+        overflow: hidden;
+        margin-left: 85px;
+        width: 72%;
+        max-height: 0px;
+        margin-top: 0px;
+        transition: 0.25s ease-out;
+
+        p {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 170%;
+          letter-spacing: -0.02em;
+          color: #a9abb1;
+          opacity: 0;
+          transition: 0.25s ease-out;
+        }
+      }
+    }
+  }
+}
+
+.bar-active {
+  .drop-bars__bars-box__bar__text-box {
+    max-height: 500px;
+    margin-top: 25px;
+    transition: 0.25s ease-in;
+
+    p {
+      transition: 0.25s ease-in;
+      opacity: 1;
+    }
+  }
+
+  .drop-bars__bars-box__bar__tab__icon-2 {
+    span {
+      &:nth-child(1) {
+        margin-top: 10px;
+        transform-origin: bottom right !important;
+        transform: rotate(90deg) translateY(8px);
+      }
+
+      &:nth-child(2) {
+        transform-origin: top right !important;
+        transform: rotate(0deg) translateY(-8px);
+      }
+    }
+  }
+}
+
+// responsive
+@media (max-width: breakpoint(md)) {
+  .drop-bars {
+    padding: 45px 0px 30px;
+
+    &__bars-box {
+      margin-top: 45px;
+
+      &__bar {
+        padding: 10px 31px 10px 8px;
+        width: 90%;
+        margin-bottom: 10px;
+
+        &__tab {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          position: relative;
+
+          &__icon-1 {
+            margin-right: 25px;
+          }
+
+          &__desc {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+          }
+
+          &__icon-2 {
+            position: absolute;
+            right: 10px;
+            top: 20px;
+            cursor: pointer;
+          }
+        }
+
+        &__text-box {
+          overflow: hidden;
+          margin-left: 85px;
+          width: 72%;
+          max-height: 0px;
+          margin-top: 0px;
+          transition: 0.25s ease-out;
+
+          p {
+            font-size: 11.3334px;
+            letter-spacing: -0.02em;
+          }
+        }
+      }
+    }
+  }
+}

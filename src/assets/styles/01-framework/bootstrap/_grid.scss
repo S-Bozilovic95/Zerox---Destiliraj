@@ -15,8 +15,8 @@ $grid-breakpoints: (
   sm: 500px,
   mb: 768px,
   md: 992px,
-  lg: 1280px,
-  xl: 1400px,
+  lg: 1240px,
+  xl: 1440px,
 ) !default;
 
 @function strip-unit($num) {
@@ -40,8 +40,8 @@ $container-max-widths: (
   sm: 540px,
   mb: 720px,
   md: 960px,
-  lg: 1230px,
-  xl: 1380px,
+  lg: 1150px,
+  xl: 1200px,
 ) !default;
 
 // Grid columns

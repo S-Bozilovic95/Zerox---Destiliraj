@@ -6,13 +6,17 @@
     margin-bottom: 10px;
   }
 
+  &__mobile-box {
+    display: none;
+  }
+
   &__logo-box {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px 0px;
     flex-wrap: wrap;
+    margin: 100px 0px;
 
     img {
       margin-right: 50px;
@@ -40,6 +44,14 @@
         background: #c6b787;
         z-index: -1;
       }
+    }
+
+    &__desktop-box {
+      display: none;
+    }
+
+    &__mobile-box {
+      display: block;
     }
 
     &__logo-box {

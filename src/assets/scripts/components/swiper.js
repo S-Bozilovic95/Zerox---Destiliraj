@@ -1,10 +1,27 @@
 /* eslint-disable no-unused-vars */
 import Swiper from 'swiper';
 
-const swiperDesktop = new Swiper('.swiper-desktop', {
+const swiperDesktopSingle = new Swiper('.swiper-desktop-single', {
+    slidesPerView: 1,
+    spaceBetween: 1,
+    autoplay: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+});
+
+const swiperDesktopMultiple = new Swiper('.swiper-desktop-multiple', {
     slidesPerView: 5,
-    spaceBetween: 0,
-    centeredSlides: true,
+    spaceBetween: 1,
+    autoplay: true,
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
 });
 
 const swiperMobileSingle = new Swiper('.swiper-mobile-single', {
