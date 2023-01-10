@@ -1,5 +1,5 @@
 .hero {
-  padding: 200px 0px 60px;
+  padding: 200px 0px 120px;
   position: relative;
 
   &__image-box {
@@ -43,6 +43,7 @@
 
       &:first-of-type a {
         margin-right: 20px !important;
+        margin-bottom: 20px !important;
       }
     }
   }

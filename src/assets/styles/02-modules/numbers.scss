@@ -1,6 +1,7 @@
 .numbers {
   padding: 60px 0px;
   background: linear-gradient(180deg, #ffffff 400px, #f9f6ed 100px);
+  text-align: center;
 
   &__num-box {
     display: flex;
@@ -35,12 +36,9 @@
     width: 70%;
     margin: 10px auto 50px;
   }
-
-  &__btn-box {
-    text-align: center;
-  }
 }
 
+// responsive
 @media (max-width: breakpoint(md)) {
   .numbers {
     padding: 23px 0px 84px;
