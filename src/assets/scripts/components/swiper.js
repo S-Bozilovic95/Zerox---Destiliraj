@@ -5,6 +5,7 @@ const swiperDesktopSingle = new Swiper('.swiper-desktop-single', {
     slidesPerView: 1,
     spaceBetween: 1,
     autoplay: true,
+    disableOnInteraction: false,
 
     pagination: {
         el: '.swiper-pagination',

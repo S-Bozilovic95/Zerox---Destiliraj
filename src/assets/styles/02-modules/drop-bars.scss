@@ -14,20 +14,25 @@
     justify-content: center;
 
     &__bar {
+      position: relative;
       padding: 13px 39px 13px 10px;
       background: #ffffff;
       border-radius: 10px;
-      width: 40%;
+      width: 100%;
+      max-width: 649px;
       margin-bottom: 12px;
+      z-index: 3;
 
       &__tab {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         position: relative;
+        cursor: pointer;
 
         &__icon-1 {
           margin-right: 33px;
+          cursor: auto;
         }
 
         &__desc {
@@ -35,17 +40,14 @@
           font-size: 16px;
           line-height: 19px;
           color: #000000;
+          z-index: -1;
         }
 
         &__icon-2 {
           position: absolute;
           right: 10px;
           top: 20px;
-          cursor: pointer;
-
-          width: 30px;
-          height: 40px;
-          cursor: pointer;
+          z-index: -1;
 
           span {
             content: "";
@@ -61,6 +63,7 @@
             transition: transform 0.4s cubic-bezier(0.3, 0, 0.22, 1),
               opacity 0.2s cubic-bezier(0.3, 0, 0.22, 1),
               -webkit-transform 0.4s cubic-bezier(0.3, 0, 0.22, 1);
+            transition: 0.25s ease-out;
 
             &:nth-child(1) {
               margin-top: 10px;
@@ -73,6 +76,16 @@
               transform: rotate(0deg) translateY(-8px);
             }
           }
+        }
+
+        &__icon-3 {
+          position: absolute;
+          right: 10px;
+          top: 20px;
+          z-index: -1;
+          display: none;
+          transform: rotate(0deg) translateX(0px);
+          transition: 0.25s ease-out;
         }
       }
 
@@ -115,14 +128,26 @@
       &:nth-child(1) {
         margin-top: 10px;
         transform-origin: bottom right !important;
-        transform: rotate(90deg) translateY(8px);
+        transform: rotate(180deg) translateY(8px);
+        transition: 0.25s ease-in;
+        background-color: #c6b787;
+        border-radius: 10px 0px 0px 10px;
+        width: 7px;
       }
-
       &:nth-child(2) {
-        transform-origin: top right !important;
-        transform: rotate(0deg) translateY(-8px);
+        background-color: #c6b787;
+        border-radius: 10px 0px 0px 10px;
+        transition: 0.25s ease-in;
+        width: 7px;
       }
     }
+  }
+
+  .drop-bars__bars-box__bar__tab__icon-3 {
+    transform: rotate(180deg);
+    filter: invert(47%) sepia(4%) saturate(791%) hue-rotate(5deg)
+      brightness(88%) contrast(77%);
+    transition: 0.25s ease-in;
   }
 }
 
@@ -136,7 +161,7 @@
 
       &__bar {
         padding: 10px 31px 10px 8px;
-        width: 90%;
+        max-width: 343px;
         margin-bottom: 10px;
 
         &__tab {
@@ -157,10 +182,11 @@
           }
 
           &__icon-2 {
-            position: absolute;
-            right: 10px;
-            top: 20px;
-            cursor: pointer;
+            display: none;
+          }
+
+          &__icon-3 {
+            display: block;
           }
         }
 

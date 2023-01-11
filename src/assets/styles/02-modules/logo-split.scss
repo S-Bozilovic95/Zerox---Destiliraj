@@ -10,17 +10,17 @@
     display: none;
   }
 
-  &__logo-box {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  &__logo-box-desktop {
     margin: 100px 0px;
+  }
+
+  &__logo-box-mobile {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     img {
-      margin-right: 50px;
-      margin-bottom: 20px;
+      margin: 0px 50px 20px 0px;
     }
   }
 }
@@ -54,12 +54,12 @@
       display: block;
     }
 
-    &__logo-box {
+    &__logo-box-mobile {
       margin: 45px 0px 0px;
-      justify-content: flex-start;
 
       img {
-        margin-right: 12px;
+        gap: 20px;
+        margin: 0px auto 20px;
         padding: 40px 20px;
         border-color: white;
         box-shadow: (0px 4px 5px rgba(0, 0, 0, 0.1));
@@ -74,8 +74,8 @@
 
 @media (max-width: breakpoint(sm)) {
   .logo-split {
-    &__logo-box {
-      justify-content: center;
+    &__logo-box-mobile {
+      grid-template-columns: 1fr;
     }
   }
 }

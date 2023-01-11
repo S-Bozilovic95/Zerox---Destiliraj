@@ -16,22 +16,22 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@6/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <div class="main">
-      <!-- NAVBAR SECTION -->
-      <div class="overlay"></div>
-      <section class="navbar">
-        <div class="navbar__top-box">
-          <span>New</span>
-          <p>
-            Using Supersive is a manifesto in itself. It is simply the best
-            choice we ever made.
-          </p>
-          <a href="#">Learn more</a>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="navbar__small-menu">
+    <!-- NAVBAR SECTION -->
+    <div class="overlay"></div>
+    <header class="navbar">
+      <div class="navbar__top-box">
+        <span>New</span>
+        <p>
+          Using Supersive is a manifesto in itself. It is simply the best choice
+          we ever made.
+        </p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="navbar__small-menu">
+              <a href="/">
                 <svg
                   class="navbar__small-menu__logo"
                   width="129"
@@ -61,18 +61,20 @@
                     fill="#A79A6F"
                   />
                 </svg>
+              </a>
 
-                <div class="navbar__small-menu__icon">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+              <div class="navbar__small-menu__icon">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
             </div>
           </div>
-          <div class="navbar__bottom-box">
-            <div class="row">
-              <div class="col-md-4 col-12">
+        </div>
+        <div class="navbar__bottom-box">
+          <div class="row">
+            <div class="col-md-5 col-12">
+              <a href="/">
                 <svg
                   class="navbar__bottom-box__logo"
                   width="220"
@@ -102,34 +104,32 @@
                     fill="#A79A6F"
                   />
                 </svg>
-              </div>
-              <div class="col-md-3 col-12"></div>
-              <div class="col-md-5 col-12">
-                <div class="row">
-                  <div class="col-md-7 col-12">
-                    <div class="navbar__bottom-box__link-box">
-                      <a href="#" class="navbar__bottom-box__link-box__link"
-                        >Home</a
-                      >
-                      <a href="#" class="navbar__bottom-box__link-box__link"
-                        >Pricing</a
-                      >
-                      <a href="#" class="navbar__bottom-box__link-box__link"
-                        >Blog</a
-                      >
-                    </div>
-                  </div>
-                  <div class="col-md-5 col-12">
-                    <a href="#" class="global-btn-medium">Get Started</a>
-                  </div>
+              </a>
+            </div>
+
+            <div class="col-md-7 col-12">
+              <div class="navbar__bottom-box__contact-box">
+                <div class="navbar__bottom-box__link-box">
+                  <a href="#" class="navbar__bottom-box__link-box__link"
+                    >Home</a
+                  >
+                  <a href="#" class="navbar__bottom-box__link-box__link"
+                    >Pricing</a
+                  >
+                  <a href="#" class="navbar__bottom-box__link-box__link"
+                    >Blog</a
+                  >
                 </div>
+                <a href="#" class="global-btn-medium">Get Started</a>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- END NAVBAR SECTION -->
+      </div>
+    </header>
+    <!-- END NAVBAR SECTION -->
 
+    <div class="main">
       <!-- HERO SECTION -->
       <section class="hero">
         <div class="container">
@@ -160,10 +160,7 @@
             <div class="col-md-5 col-12">
               <div
                 class="hero__image-box"
-                style="
-                  background-image: url(./images/fade1.png),
-                    url(./images/hero1.png);
-                "
+                style="background-image: url(./images/hero1.png)"
               ></div>
             </div>
           </div>
@@ -247,43 +244,45 @@
           <div class="split-col-desktop">
             <div class="row">
               <div class="col-md-6">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="split-column__card-1">
-                      <div class="split-column__card-1__img-box">
-                        <span class="global-pin-white">BENEFITS</span>
-                        <img
-                          class="split-column__card-1__icon"
-                          src="./images/splitCol1.svg"
-                          alt="icon"
-                        />
+                <div class="card1-box">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="split-column__card-1 card1-add-margin">
+                        <div class="split-column__card-1__img-box">
+                          <span class="global-pin-white">BENEFITS</span>
+                          <img
+                            class="split-column__card-1__icon"
+                            src="./images/splitCol1.svg"
+                            alt="icon"
+                          />
+                        </div>
+                        <h3 class="global-subtitle">Direct Connections</h3>
+                        <p class="global-description">
+                          No lonins or anything is needed. Directly connect with
+                          everyone with only one permissions, Let us control
+                          your business world for you. Easy, customizable and
+                          quick way of connecting with others
+                        </p>
                       </div>
-                      <h3 class="global-subtitle">Direct Connections</h3>
-                      <p class="global-description">
-                        No lonins or anything is needed. Directly connect with
-                        everyone with only one permissions, Let us control your
-                        business world for you. Easy, customizable and quick way
-                        of connecting with others
-                      </p>
                     </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="split-column__card-1">
-                      <div class="split-column__card-1__img-box">
-                        <span class="global-pin-white">BENEFITS</span>
-                        <img
-                          class="split-column__card-1__icon"
-                          src="./images/splitCol1.svg"
-                          alt="icon"
-                        />
+                    <div class="col-12">
+                      <div class="split-column__card-1">
+                        <div class="split-column__card-1__img-box">
+                          <span class="global-pin-white">BENEFITS</span>
+                          <img
+                            class="split-column__card-1__icon"
+                            src="./images/splitCol1.svg"
+                            alt="icon"
+                          />
+                        </div>
+                        <h3 class="global-subtitle">Direct Connections</h3>
+                        <p class="global-description">
+                          No lonins or anything is needed. Directly connect with
+                          everyone with only one permissions, Let us control
+                          your business world for you. Easy, customizable and
+                          quick way of connecting with others
+                        </p>
                       </div>
-                      <h3 class="global-subtitle">Direct Connections</h3>
-                      <p class="global-description">
-                        No lonins or anything is needed. Directly connect with
-                        everyone with only one permissions, Let us control your
-                        business world for you. Easy, customizable and quick way
-                        of connecting with others
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -574,7 +573,7 @@
       <section class="testimonials">
         <div class="container">
           <div class="row">
-            <div class="col-md-3 col-12">
+            <div class="col-md-2 col-12">
               <div class="testimonials__text-box1">
                 <span class="global-pin-white">TESTIMONIALS</span>
                 <h3 class="global-subtitle">
@@ -586,6 +585,7 @@
                 <a class="global-btn-regular" href="#">All coments</a>
               </div>
             </div>
+            <div class="col-md-1"></div>
             <div class="col-md-9 col-12">
               <div
                 class="swiper-container swiper-desktop-single testimonials__card-box"
@@ -690,7 +690,7 @@
 
           <!-- desktop -->
           <div class="logo-split__desktop-box">
-            <div class="logo-split__logo-box">
+            <div class="logo-split__logo-box-desktop">
               <div class="swiper-container swiper-desktop-multiple logo-swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -715,7 +715,7 @@
 
           <!-- mobile -->
           <div class="logo-split__mobile-box">
-            <div class="logo-split__logo-box">
+            <div class="logo-split__logo-box-mobile">
               <img src="./images/logo1.png" alt="logo" />
               <img src="./images/logo1.png" alt="logo" />
               <img src="./images/logo1.png" alt="logo" />
@@ -750,6 +750,9 @@
                 <span></span>
                 <span></span>
               </div>
+              <div class="drop-bars__bars-box__bar__tab__icon-3">
+                <img src="./images/barVector-icon.svg" alt="icon" />
+              </div>
             </div>
             <div class="drop-bars__bars-box__bar__text-box">
               <p class="global-description">
@@ -772,11 +775,13 @@
               <p class="drop-bars__bars-box__bar__tab__desc">
                 What is TeamHive?
               </p>
-              <img
-                class="drop-bars__bars-box__bar__tab__icon-2"
-                src="./images/bar-icon2.svg"
-                alt="bar-icon"
-              />
+              <div class="drop-bars__bars-box__bar__tab__icon-2">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="drop-bars__bars-box__bar__tab__icon-3">
+                <img src="./images/barVector-icon.svg" alt="icon" />
+              </div>
             </div>
             <div class="drop-bars__bars-box__bar__text-box">
               <p class="global-description">
@@ -799,11 +804,13 @@
               <p class="drop-bars__bars-box__bar__tab__desc">
                 What is TeamHive?
               </p>
-              <img
-                class="drop-bars__bars-box__bar__tab__icon-2"
-                src="./images/bar-icon2.svg"
-                alt="bar-icon"
-              />
+              <div class="drop-bars__bars-box__bar__tab__icon-2">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="drop-bars__bars-box__bar__tab__icon-3">
+                <img src="./images/barVector-icon.svg" alt="icon" />
+              </div>
             </div>
             <div class="drop-bars__bars-box__bar__text-box">
               <p class="global-description">
@@ -826,11 +833,13 @@
               <p class="drop-bars__bars-box__bar__tab__desc">
                 What is TeamHive?
               </p>
-              <img
-                class="drop-bars__bars-box__bar__tab__icon-2"
-                src="./images/bar-icon2.svg"
-                alt="bar-icon"
-              />
+              <div class="drop-bars__bars-box__bar__tab__icon-2">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="drop-bars__bars-box__bar__tab__icon-3">
+                <img src="./images/barVector-icon.svg" alt="icon" />
+              </div>
             </div>
             <div class="drop-bars__bars-box__bar__text-box">
               <p class="global-description">
@@ -853,11 +862,13 @@
               <p class="drop-bars__bars-box__bar__tab__desc">
                 What is TeamHive?
               </p>
-              <img
-                class="drop-bars__bars-box__bar__tab__icon-2"
-                src="./images/bar-icon2.svg"
-                alt="bar-icon"
-              />
+              <div class="drop-bars__bars-box__bar__tab__icon-2">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="drop-bars__bars-box__bar__tab__icon-3">
+                <img src="./images/barVector-icon.svg" alt="icon" />
+              </div>
             </div>
             <div class="drop-bars__bars-box__bar__text-box">
               <p class="global-description">
@@ -880,11 +891,13 @@
               <p class="drop-bars__bars-box__bar__tab__desc">
                 What is TeamHive?
               </p>
-              <img
-                class="drop-bars__bars-box__bar__tab__icon-2"
-                src="./images/bar-icon2.svg"
-                alt="bar-icon"
-              />
+              <div class="drop-bars__bars-box__bar__tab__icon-2">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="drop-bars__bars-box__bar__tab__icon-3">
+                <img src="./images/barVector-icon.svg" alt="icon" />
+              </div>
             </div>
             <div class="drop-bars__bars-box__bar__text-box">
               <p class="global-description">

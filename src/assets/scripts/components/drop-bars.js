@@ -1,9 +1,12 @@
 /* eslint-disable no-unused-vars */
-let bar = document.querySelectorAll('.rop-bars__bars-box__bar');
-let icon = document.querySelectorAll('.drop-bars__bars-box__bar__tab__icon-2');
+let bar = document.querySelectorAll('.drop-bars__bars-box__bar');
 
-icon.forEach(el => {
-    el.addEventListener('click', (e) => {
-        e.target.parentNode.parentNode.classList.toggle('bar-active');
+if (bar) {
+    bar.forEach(el => {
+        el.addEventListener('click', (e) => {
+            if (e.target.parentNode.classList.contains('drop-bars__bars-box__bar')) {
+                e.target.parentNode.classList.toggle('bar-active');
+            }
+        });
     });
-});
+}
