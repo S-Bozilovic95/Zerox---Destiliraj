@@ -1,16 +1,18 @@
 /* eslint-disable no-unused-vars */
-let bar = document.querySelectorAll('.drop-bars__bars-box__bar');
+let icon = document.querySelectorAll('.drop-bars__bars-box__bar__tab__icon');
+let title = document.querySelectorAll('.drop-bars__bars-box__bar__tab__desc');
 
-if (bar) {
-    bar.forEach(el => {
+// /functions
+function toggleBar (value) {
+    value.forEach(el => {
         el.addEventListener('click', (e) => {
-            if (e.target.parentNode.classList.contains('drop-bars__bars-box__bar')) {
-                e.target.parentNode.classList.toggle('bar-active');
-            }
-
-            if (e.target.classList.contains('drop-bars__desc')) {
-                e.target.parentNode.parentNode.classList.remove('bar-active');
-            }
+            e.target.parentNode.parentNode.classList.toggle('bar-active');
         });
     });
+}
+
+// toggle bars
+if (icon && title) {
+    toggleBar(icon);
+    toggleBar(title);
 }

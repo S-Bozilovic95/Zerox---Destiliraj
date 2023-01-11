@@ -28,9 +28,8 @@
         justify-content: flex-start;
         align-items: center;
         position: relative;
-        cursor: pointer;
 
-        &__icon-1 {
+        &__icon-primary {
           margin-right: 33px;
           cursor: auto;
         }
@@ -40,52 +39,24 @@
           font-size: 16px;
           line-height: 19px;
           color: #000000;
-          z-index: -1;
+          cursor: pointer;
         }
 
-        &__icon-2 {
+        &__icon {
           position: absolute;
           right: 10px;
           top: 20px;
-          z-index: -1;
-
-          span {
-            content: "";
-            height: 4px;
-            width: 12px;
-            background: #483a14;
-            display: block;
-            border-radius: 0px;
-            transition: opacity 0.2s cubic-bezier(0.3, 0, 0.22, 1),
-              -webkit-transform 0.4s cubic-bezier(0.3, 0, 0.22, 1);
-            transition: transform 0.4s cubic-bezier(0.3, 0, 0.22, 1),
-              opacity 0.2s cubic-bezier(0.3, 0, 0.22, 1);
-            transition: transform 0.4s cubic-bezier(0.3, 0, 0.22, 1),
-              opacity 0.2s cubic-bezier(0.3, 0, 0.22, 1),
-              -webkit-transform 0.4s cubic-bezier(0.3, 0, 0.22, 1);
-            transition: 0.25s ease-out;
-
-            &:nth-child(1) {
-              margin-top: 10px;
-              transform-origin: bottom right !important;
-              transform: rotate(90deg) translateY(8px);
-            }
-
-            &:nth-child(2) {
-              transform-origin: top right !important;
-              transform: rotate(0deg) translateY(-8px);
-            }
-          }
+          cursor: pointer;
         }
 
-        &__icon-3 {
-          position: absolute;
-          right: 10px;
-          top: 20px;
-          z-index: -1;
+        .drop-icon-vector {
           display: none;
           transform: rotate(0deg) translateX(0px);
           transition: 0.25s ease-out;
+        }
+
+        .drop-icon-minus {
+          display: none;
         }
       }
 
@@ -95,7 +66,7 @@
         width: 72%;
         max-height: 0px;
         margin-top: 0px;
-        transition: 0.25s ease-out;
+        transition: 0.25s ease-out max-height;
 
         p {
           font-weight: 700;
@@ -103,8 +74,6 @@
           line-height: 170%;
           letter-spacing: -0.02em;
           color: #a9abb1;
-          opacity: 0;
-          transition: 0.25s ease-out;
         }
       }
     }
@@ -115,35 +84,18 @@
   .drop-bars__bars-box__bar__text-box {
     max-height: 500px;
     margin-top: 25px;
-    transition: 0.25s ease-in;
-
-    p {
-      transition: 0.25s ease-in;
-      opacity: 1;
-    }
+    transition: 0.25s ease-in max-height;
   }
 
-  .drop-bars__bars-box__bar__tab__icon-2 {
-    span {
-      &:nth-child(1) {
-        margin-top: 10px;
-        transform-origin: bottom right !important;
-        transform: rotate(180deg) translateY(8px);
-        transition: 0.25s ease-in;
-        background-color: #c6b787;
-        border-radius: 10px 0px 0px 10px;
-        width: 7px;
-      }
-      &:nth-child(2) {
-        background-color: #c6b787;
-        border-radius: 10px 0px 0px 10px;
-        transition: 0.25s ease-in;
-        width: 7px;
-      }
-    }
+  .drop-icon-plus {
+    display: none;
   }
 
-  .drop-bars__bars-box__bar__tab__icon-3 {
+  .drop-icon-minus {
+    display: block;
+  }
+
+  .drop-icon-vector {
     transform: rotate(180deg);
     filter: invert(47%) sepia(4%) saturate(791%) hue-rotate(5deg)
       brightness(88%) contrast(77%);
@@ -170,7 +122,7 @@
           align-items: center;
           position: relative;
 
-          &__icon-1 {
+          &__icon-primary {
             margin-right: 25px;
           }
 
@@ -181,11 +133,15 @@
             color: #000000;
           }
 
-          &__icon-2 {
+          .drop-icon-plus {
             display: none;
           }
 
-          &__icon-3 {
+          .drop-icon-minus {
+            display: none;
+          }
+
+          .drop-icon-vector {
             display: block;
           }
         }

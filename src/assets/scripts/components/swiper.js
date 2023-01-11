@@ -4,8 +4,11 @@ import Swiper from 'swiper';
 const swiperDesktopSingle = new Swiper('.swiper-desktop-single', {
     slidesPerView: 1,
     spaceBetween: 1,
-    autoplay: true,
-    disableOnInteraction: false,
+
+    autoplay:{
+        autoplay:true,
+        disableOnInteraction: false,
+    },
 
     pagination: {
         el: '.swiper-pagination',
@@ -16,8 +19,12 @@ const swiperDesktopSingle = new Swiper('.swiper-desktop-single', {
 const swiperDesktopMultiple = new Swiper('.swiper-desktop-multiple', {
     slidesPerView: 5,
     spaceBetween: 1,
-    autoplay: true,
     loop: true,
+
+    autoplay:{
+        autoplay:true,
+        disableOnInteraction: false,
+    },
 
     pagination: {
         el: '.swiper-pagination',
