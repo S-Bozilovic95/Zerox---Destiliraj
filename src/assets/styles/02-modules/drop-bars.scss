@@ -19,7 +19,7 @@
       background: #ffffff;
       border-radius: 10px;
       width: 100%;
-      max-width: 649px;
+      max-width: 700px;
       margin-bottom: 12px;
       z-index: 3;
 
@@ -38,7 +38,6 @@
         &__desc {
           font-weight: 700;
           font-size: 16px;
-          line-height: 19px;
           color: #000000;
           cursor: pointer;
           z-index: -1;
@@ -66,7 +65,6 @@
       &__text-box {
         overflow: hidden;
         margin-left: 85px;
-        width: 72%;
         max-height: 0px;
         margin-top: 0px;
         transition: 0.25s ease-out max-height;
@@ -74,7 +72,6 @@
         p {
           font-weight: 700;
           font-size: 14px;
-          line-height: 170%;
           letter-spacing: -0.02em;
           color: #a9abb1;
         }
@@ -86,7 +83,6 @@
 .bar-active {
   .drop-bars__bars-box__bar__text-box {
     max-height: 500px;
-    margin-bottom: 25px;
     transition: 0.25s ease-in max-height;
   }
 
@@ -132,7 +128,6 @@
           &__desc {
             font-weight: 700;
             font-size: 16px;
-            line-height: 19px;
             color: #000000;
           }
 
@@ -151,8 +146,7 @@
 
         &__text-box {
           overflow: hidden;
-          margin-left: 85px;
-          width: 72%;
+          margin-left: 75px;
           max-height: 0px;
           margin-top: 0px;
           transition: 0.25s ease-out;

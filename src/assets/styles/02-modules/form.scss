@@ -11,7 +11,7 @@
       #c6b787 142.23%
     );
     border-radius: 20px;
-    max-width: 651px;
+    max-width: 700px;
     width: 100%;
     margin: auto;
     padding: 90px 63px;
@@ -41,7 +41,7 @@
       label {
         font-weight: 500;
         font-size: 16px;
-        line-height: 127.4%;
+        line-height: 1.5;
         margin-bottom: 20px;
         color: white;
       }
@@ -57,7 +57,7 @@
         border: none;
         font-weight: 900;
         font-size: 16px;
-        line-height: 19px;
+        line-height: 1.5;
         color: #483a14;
 
         &::placeholder {
@@ -84,7 +84,6 @@
       p {
         font-weight: 700;
         font-size: 16px;
-        line-height: 19px;
         color: #e1dbca;
         margin: 0px 10px;
       }
@@ -169,7 +168,6 @@
         p {
           margin: 0px 5px;
           font-size: 14px;
-          line-height: 10px;
         }
 
         a {
