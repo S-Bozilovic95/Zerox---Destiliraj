@@ -8,11 +8,10 @@
 
   &__text-box {
     margin-bottom: 150px;
-    h3 {
+
+    &__title {
       text-align: left;
       font-weight: 500;
-      font-size: 28px;
-      line-height: 33px;
       margin-bottom: 20px;
       color: #ffffff;
       max-width: 361px;
@@ -151,9 +150,9 @@
 
     &__text-box {
       margin-bottom: 33px;
-      h3 {
+
+      &__title {
         font-size: 22px;
-        line-height: 28px;
         margin-bottom: 20px !important;
         max-width: 297px;
         width: 100%;

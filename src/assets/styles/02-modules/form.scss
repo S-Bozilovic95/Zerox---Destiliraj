@@ -2,6 +2,10 @@
   padding: 100px 70px;
   background: linear-gradient(180deg, #f9f6ed 680px, #212121 100px);
 
+  &__title {
+    color: #fff;
+  }
+
   &__form-box {
     text-align: center;
     background: linear-gradient(
@@ -27,11 +31,11 @@
       display: none;
     }
 
-    h3 {
-      color: white;
-      font-size: 28px;
-      line-height: 33px;
-    }
+    // h3 {
+    //   color: white;
+    //   font-size: 28px;
+    //   line-height: 33px;
+    // }
 
     form {
       margin-top: 85px;
@@ -128,7 +132,7 @@
     &__form-box {
       max-width: 343px;
       margin: auto;
-      padding: 40px 10px;
+      padding: 40px 20px;
 
       &__icon-1 {
         display: none;

@@ -1,6 +1,13 @@
 .split-column {
   padding: 100px 0px 47px;
 
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+  }
+
   .card1-add-margin {
     margin-bottom: 20px;
   }
@@ -123,6 +130,17 @@
       &:first-of-type h3 {
         margin-bottom: 15px;
       }
+    }
+
+    &__desc {
+      font-size: 11px !important;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      line-height: 1.7 !important;
     }
   }
 }
