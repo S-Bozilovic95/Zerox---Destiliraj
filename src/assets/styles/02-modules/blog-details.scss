@@ -156,7 +156,7 @@
 
 @media (max-width: breakpoint(md)) {
   .blog-details {
-    padding: 0px 0px 21px;
+    padding: 0px;
     background-image: none;
 
     &__background-banner {
@@ -165,7 +165,7 @@
 
     &__content-wrapper {
       position: relative;
-      top: -30px;
+      top: -20px;
     }
 
     &__mobile-banner {
@@ -201,7 +201,7 @@
     }
 
     &__social-icon-box {
-      margin-bottom: 51px;
+      margin-bottom: 41px;
       text-align: center;
 
       p {
