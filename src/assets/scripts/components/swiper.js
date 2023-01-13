@@ -56,7 +56,7 @@ const swiperMobileMultiple = new Swiper('.swiper-mobile-multiple', {
             slidesPerView: 1.5,
         },
         300: {
-            slidesPerView: 1.3,
+            slidesPerView: 1.2,
         },
     }
 
