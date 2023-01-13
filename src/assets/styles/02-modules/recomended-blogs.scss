@@ -1,12 +1,15 @@
-.blog-cards {
-  padding: 93px 0px 68px;
+.recomended {
+  padding: 0px 0px 100px;
 
   &__main-title {
-    margin-bottom: 30px !important;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 30px;
   }
 
   &__card-box {
-    margin-bottom: 64px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 33px;
@@ -36,7 +39,6 @@
           font-size: 16px;
           letter-spacing: 0.03em;
           color: #888888 !important;
-          margin-bottom: 22px;
         }
 
         &__profile-box {
@@ -68,56 +70,22 @@
       }
     }
   }
-
-  &__btn-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-
-    &__button {
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      padding: 12px 20px;
-      color: #483a14;
-      background: #f9f6ed;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 21px;
-      letter-spacing: 0.03em;
-      text-align: center;
-      transition: 0.25s ease-out;
-      margin: 0px 10px;
-
-      &:hover {
-        background: #483a14;
-        color: #ffffff;
-        transition: 0.25s ease-in;
-      }
-    }
-  }
 }
 
 // responsive
-@media (max-width: breakpoint(lg)) {
-  .blog-cards {
-    &__card-box {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-}
+
 @media (max-width: breakpoint(md)) {
-  .blog-cards {
-    padding: 17px 0px 30px;
+  .recomended {
+    padding: 0px 0px 44px;
 
     &__main-title {
-      text-align: center !important;
-      margin-bottom: 24px !important;
+      font-size: 22px;
+      line-height: 19px;
+      margin-bottom: 24px;
     }
 
     &__card-box {
-      margin-bottom: 31px;
+      margin-bottom: 44px;
       grid-template-columns: 1fr;
       gap: 24px;
 
@@ -143,22 +111,6 @@
             align-items: center;
           }
         }
-      }
-    }
-
-    &__btn-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: nowrap;
-
-      &__button {
-        width: 44px;
-        height: 44px;
-        padding: 12.5px 15px;
-        font-size: 14 px;
-        line-height: 16px;
-        margin-right: 10px;
       }
     }
   }
