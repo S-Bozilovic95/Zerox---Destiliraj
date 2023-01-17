@@ -1,40 +1,40 @@
 body {
-  color: #00293a;
+  color: #000000;
   //     margin: 20px 0;
 }
 
 h1,
 .h1 {
-  font-size: 64px;
-  line-height: 70px;
+  font-size: 48px;
+  line-height: 1.2;
   font-weight: 700;
 }
 
 h2,
 .h2 {
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 36px;
+  line-height: 1.2;
   font-weight: 700;
 }
 
 h3,
 .h3 {
-  font-size: 36px;
-  line-height: 45px;
+  font-size: 28px;
+  line-height: 1.2;
   font-weight: 700;
 }
 
 h4,
 .h4 {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 1.2;
   font-weight: 700;
 }
 
 h5,
 .h5 {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.2;
   font-weight: 700;
 }
 
@@ -90,6 +90,14 @@ strong {
 }
 
 p {
+}
+
+p.description {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #a9abb1;
 }
 
 a {
